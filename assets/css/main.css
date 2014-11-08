@@ -64,3 +64,7 @@ button{
 	height: 30px;
 	padding-top: 3px;
 }
+
+.playing-now{
+    font-size: 16px;
+}

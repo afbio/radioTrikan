@@ -21,7 +21,10 @@ $(function(){
 			'show_only_matches' : true,
 			'search_leaves_only' : true
 		}
-	});
+	})
+        .on('before_open.jstree', function(node){
+            $playlist.jstree('close_all', "#", 100);
+        });
 
 	var clip = new ZeroClipboard(document.getElementById('copy-description'));
 
