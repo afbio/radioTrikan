@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <title>Trikan Shark</title>
         <script src="assets/js/jquery-2.1.1.min.js" type="text/javascript"></script>
-        <script src="assets/js/jstree/jstree.min.js"></script>
+        <script src="assets/js/jstree/jstree.js"></script>
         <script src="assets/js/ZeroClipboard.min.js"></script>
         <script src="assets/js/main.js" type="text/javascript"></script>
 
@@ -35,15 +35,31 @@
                 <div id="totalSearch"></div>
                 
                 
-                <div id="cxtitulo">
-                    <div class="playing-now">Tocando:</div>
+                <div class="rightBoxes">
+                    <div class="boxesTitle">Tocando:</div>
                     <div id="musicTitle"></div>
                     <!-- <a href="" id="btDownload" class="btn-sm btn btn-primary"><span class="glyphicon glyphicon-download"></span> FAÇA O DOWNLOAD</a> -->
+                </div>
+                
+                <div class="rightBoxes playslist">
+                    <div class="boxesTitle">Playlist:</div>
+                    <div class="options">
+                        <ul>
+                            <li>
+                                <button id="playlist_start" class="btn-sm btn btn-primary" data-toggle="tooltip" data-placement="top" title="ctrl + «">Iniciar<span class="glyphicon glyphicon-play"></span></button> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="playlist">
+                        <ul id="playlist_list">
+                            
+                        </ul>
+                    </div>
                 </div>
                               
             </div>
 
-            <div id="playlist"></div>    
+            <div id="list"></div>    
         </div>
     </body>
 </html>
